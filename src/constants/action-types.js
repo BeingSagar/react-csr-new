@@ -1,0 +1,26 @@
+const actionTypes = {
+    LANG: 'LANG',
+    auth: {
+        LOGIN_REQUEST: 'USERS_LOGIN_REQUEST',
+        LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
+        LOGIN_FAILURE: 'USERS_LOGIN_FAILURE',
+        CLEAR_USER: 'CLEAR_USER',
+        LOGOUT_SUCCESS: 'LOGOUT_SUCCESS',
+        LOGOUT_REQUEST: 'LOGOUT_REQUEST',
+    },
+    common: {
+        COMMON_DATA_REQUEST: 'COMMON_DATA_REQUEST',
+        COMMON_DATA_SUCCESS: 'COMMON_DATA_SUCCESS',
+        COMMON_DATA_FAILURE: 'COMMON_DATA_FAILURE',
+        SHOW_500_ERROR: 'SHOW_500_ERROR',
+        SHOW_PAGE_NOT_FOUND_ERROR: 'SHOW_PAGE_NOT_FOUND_ERROR',
+        CLEAR_ERROR: 'CLEAR_ERROR',
+    },
+    
+    loader: {
+        SHOW_LOADER: 'SHOW_LOADER',
+        HIDE_LOADER: 'HIDE_LOADER',
+    }
+};
+
+export default actionTypes;

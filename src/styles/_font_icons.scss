@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "pw-icons";
+  src: url("#{$icon-path-url}/pw-icons.eot");
+  src: url("#{$icon-path-url}/pw-icons.eot?#iefix") format("embedded-opentype"),
+    url("#{$icon-path-url}/pw-icons.woff") format("woff"),
+    url("#{$icon-path-url}/pw-icons.ttf") format("truetype"),
+    url("#{$icon-path-url}/pw-icons.svg#pw-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]::before {
+  font-family: "pw-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  font-family: "pw-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-female::before {
+  content: "\e011";
+}
+
+.icon-male::before {
+  content: "\e012";
+}
+
+.icon-bell::before {
+  content: "\52";
+}
+
+.icon-search::before {
+  content: "\68";
+}
+
+.icon-notification::before {
+  content: "\2f";
+}
+
+.icon-calendar::before {
+  content: "\64";
+}
+
+.icon-trash-bin::before {
+  content: "\e050";
+}
+
+.icon-folder-open::before {
+  content: "\e01a";
+}
+
+.icon-files-o::before {
+  content: "\e087";
+}
+
+.icon-photo-lib::before {
+  content: "\e088";
+}
+
+.icon-phone-1::before {
+  content: "\e089";
+}
+
+.icon-play::before {
+  content: "\e042";
+}
+
+.icon-pause::before {
+  content: "\e043";
+}
+
+.icon-podcast::before {
+  content: "\e049";
+}

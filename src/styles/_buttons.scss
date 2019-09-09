@@ -1,0 +1,104 @@
+@import "variables";
+
+.btn {
+  //border: none;
+  cursor: pointer;
+  background-color: $pw-button-color;
+  color: $white;
+  transition: background-color 0.3s;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    color: $white;
+  }
+
+  &.btn-small {
+    font-size: rem(14px);
+    border-radius: 0;
+    padding: rem(4px) rem(18px);
+  }
+
+  &.btn-link {
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    color: $error-btn-color;
+    min-width: rem(115px);
+    &.white {
+      color: white;
+    }
+    &.btn-secondary {
+      color: $fill-checkbox-border;
+      font-size: rem(18px);
+      font-weight: normal;
+    }
+  }
+
+  &.btn-green {
+    background-color: #00a99d;
+  }
+
+  &.no-mw {
+    min-width: auto;
+  }
+
+  &.btn-medium {
+    padding: rem(10px) rem(47px);
+    min-width: rem(156px);
+    border-radius: 0;
+    font-weight: 700;
+  }
+
+  &.light-background-button {
+    background-color: $light-background;
+  }
+}
+
+.tabs-btn {
+  background-color: transparent;
+  border: 0;
+  margin-left: 0;
+  padding: rem(4px) rem(36px) rem(8px) rem(36px);
+  font-size: 0.96875rem;
+
+  &.selected {
+    box-shadow: inset 0 -2px 0 $blue;
+    font-weight: bold;
+  }
+}
+
+.type-label {
+  min-width: rem(85px);
+  max-width: rem(85px);
+  padding: rem(2px) rem(3px);
+  color: $white;
+  margin: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: rem(10px);
+}
+
+.type-label-medium {
+  display: flex;
+  font-size: 0.9rem;
+  line-height: 1;
+  letter-spacing: rem(2px);
+  padding: rem(7px) rem(10px);
+  text-transform: uppercase;
+  margin-right: rem(30px);
+}
+
+.survey-label {
+  background-color: $survey-type;
+}
+
+.quiz-label {
+  background-color: $quiz-type;
+}
+
+.assessments-label {
+  background-color: $assessment-type;
+}

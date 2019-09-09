@@ -1,0 +1,49 @@
+@import '~styles/variables';
+@import '~styles/mixins';
+
+.menu-container {
+  width: 15%;
+  background-color: $pw-background-color;
+  height: 100%;
+}
+
+.menu-links {
+  padding-top: rem(20px);
+  max-height: 100%;
+  overflow: auto;
+
+  > li {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: rem(20px);
+    color: $pw-button-color;
+    display: block;
+    transition: background-color 0.3s;
+    padding: 0;
+
+    &:hover {
+      color: $white;
+      background-color: lighten($pw-background-color, 11%);
+    }
+
+    &.selected {
+      background-color: lighten($primary, 11%);
+      color: $white;
+    }
+
+    a,
+    span {
+      color: inherit;
+      display: inline-block;
+      padding: rem(9px) rem(48px);
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: $hide-menu-breakpoint) {
+  .menu-container {
+    display: none;
+  }
+}

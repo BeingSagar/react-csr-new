@@ -1,0 +1,46 @@
+@import '~styles/variables';
+@import '~styles/mixins';
+
+
+.graph-container {
+  font-size: 14px;
+}
+
+.selected-row {
+  background-color: #0099cc;
+}
+
+.action-buttons {
+  button {
+    margin: 20px 20px;
+    font-size: 12px;
+  }
+}
+
+.filter-item {
+  width: 200px;
+  margin: 20px 40px;
+  display: inline-block;
+}
+
+.chart-holder {
+  height: 400px;
+
+  p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+.table-wrapper {
+  font-size: 12px;
+}
+
+.text-area-wrapper{
+  margin: 20px 20px;
+  textarea {
+    width: 100%;
+    height: 80px;
+  }
+}

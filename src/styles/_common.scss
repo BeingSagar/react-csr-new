@@ -1,0 +1,92 @@
+.detail-container {
+  flex: 1;
+  padding: rem(18px) rem(32px);
+  background-color: $content-background-color;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.info-wrapper {
+  padding: rem(32px);
+}
+
+.info-details {
+  li {
+    padding-bottom: rem(9px);
+    font-size: rem(14px);
+
+    label {
+      min-width: 27.5%;
+      display: inline-block;
+    }
+    span {
+      color: $blue;
+    }
+  }
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: rem(13px) rem(25px) rem(13px) rem(30px);
+  -webkit-box-shadow: 0 rem(3px) rem(5px) rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 rem(3px) rem(5px) rgba(0, 0, 0, 0.3);
+  box-shadow: 0 rem(3px) rem(5px) rgba(0, 0, 0, 0.3);
+  background-color: $pw-background-color;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-wrapper {
+  flex: 0 0;
+  flex-basis: 2rem;
+
+  > img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .header-info {
+    display: none;
+  }
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding-top: rem(40px);
+  height: 100vh;
+}
+
+.has-error {
+  border: rem(1px) solid $error-red !important;
+}
+
+//----- Toggle card style
+.toggle-card {
+  border-radius: 0;
+  border-color: $grid-container-border-color;
+}
+
+.toggle-card-header {
+  background-color: $grid-header-background;
+  border-radius: 0 !important;
+  position: relative;
+  color: $primary;
+  font-weight: bold;
+  min-height: rem(40px);
+  padding: rem(6px) rem(20px);
+  font-size: rem(16px);
+  cursor: pointer;
+}
+
+.toggle-card-body {
+  border-radius: 0;
+}

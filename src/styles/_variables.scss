@@ -1,0 +1,90 @@
+// Path variables
+$font-path:             "/static/assets/fonts";
+$image-path:            "/static/assets/images";
+$icon-path-url:      "/static/assets/fonts-icon";
+
+$white:                                  #fff;
+$black:                                  #000;
+$error-red:                              #d02602;
+// $theme-blue:                             #211a6e;
+$content-background-color:               #f5f5f5;
+$grid-container-border-color:            #d9d9d7;
+$detail-form-border:                     #ddd;
+$grid-header-background:                 #e1e2f4;
+$table-background:                       #f1efeb;
+$row-background-1:                       #fbfbfb;
+$survey-type:                            #f9c062;
+$survey-label:                           #f5a623;
+$quiz-type:                              #86dfe9;
+$assessment-type:                        #b8e986;
+$pagination:                             #00a99d;
+$menu-background:                        #2a3039;
+$placeholder-background:                 #2f3581;
+$light-blue-background:                  #c6c7e5;
+$song-slider:                            #d2d0cb;
+$points-label-background:                #01daaf;
+$modal-close-btn-background:             #3b3b50;
+$disabled-background:                    #cccccc;
+$play-pause-circle:                      #9b96c4;
+$challenge-wrap:                         #858582;
+$audio-time-text:                        #898a8b;
+
+$header-color:                           #a1a1a2;
+$table-hover-color:                      #f2fdfb;
+$radio-button-border:                    #ddd;
+$blue-text:                              #241573;
+$light-background:                       rgba(255, 255, 255, 0.2);
+$fill-checkbox-border:                   #9b9b9b;
+$group-background-color:                 #f6f5f3;
+$group-border-color:                     #979797;
+$modal-color:                            #4d4d4d;
+$checkbox-background-color:              #eee;
+$group-shadow-color:                     rgba(0, 0, 0, 0.27);
+$error-btn-color:                        #2e3586;
+$light-grey:                             #ddd;
+$preview-header-color:                   #28303a;
+$survey-modal-color:                     #2e3586;
+$song-slider-color:                      #f4f4f4;
+$survey-list-shadow-color:               rgba(0, 0, 0, 0.5);
+
+$pagination-link:                        #f9f9f9;
+$pagination-link-active:                 #efefef;
+
+$bigger-screen-breakpoint:     992px;
+$hide-menu-breakpoint:         668px;
+$mobile-breakpoint:            500px;
+$form-fields-border:           4px;
+
+$label-text-color:        #4d4d4d;
+
+$browser-context:           16; // Default
+
+$desktop-width:             14.8;
+$design-width:             10.8;
+$tab-width:                 10.24;
+$mobile-width:              4.8;
+
+$design-width-media: 1080px;
+$tablet-width-media: 768px;
+$mobile-width-media: 480px;
+
+//--- Variables similar from bootstrap variable file
+$blue:    #211a6e !default; // #AsPerTheme
+$teal:    #00a99d !default;
+$primary:       $blue !default;
+
+$table-text-color: #4a4a4a;
+$check-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+
+$form-focus-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
+
+//---- Dropdown specific var
+$dropdown-primary: $primary;
+$dropdown-toggle-border: $teal;
+$dropdown-toggle-bg: rgba(255,255,255,0.6);
+
+
+// PW colors overide
+$pw-grey: #333;
+$pw-button-color: #928e8e;
+$pw-background-color: #3c3a3a;

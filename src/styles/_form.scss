@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+.login-form {
+  width: rem(480px);
+  background-color: $white;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// Base form css
+.page-container {
+  background-color: $white;
+  border: solid rem(0.5px) $grid-container-border-color;
+  padding: 0 0 rem(24px) 0;
+  margin-bottom: rem(24px);
+}
+
+.form-group {
+  // padding-left: rem(35px);
+  margin: rem(14px) rem(16px);
+  font-size: rem(16px);
+
+  input::-webkit-outer-spin-button, /* Removes arrows */
+  input::-webkit-inner-spin-button, /* Removes arrows */
+  input::-webkit-clear-button {
+
+    /* Removes blue cross */
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  @include bp-mobile {
+    padding-left: 0;
+  }
+}
+
+input.form-control, textarea.form-control {
+  display: block;
+  // margin-top: rem(5px);
+  width: 100%;
+  border-radius: $form-fields-border;
+  border: solid rem(1px) $detail-form-border;
+  padding: rem(14px) rem(18px);
+  font-size: rem(14px);
+  height: auto;
+
+  &:focus {
+    border: solid rem(1px) $teal;
+    box-shadow: $form-focus-shadow;
+  }
+
+  &.medium-size {
+    padding: rem(10px) rem(18px);
+  }
+
+  @include placeholder-italic();
+}
+
+
+textarea.form-control {
+  min-height: rem(100px);
+  resize: none;
+}
+
+
+// Error message for forms
+.form-error-message {
+  color: $error-red;
+  padding: rem(5px) 0 0;
+  font-size: rem(14px);
+
+  &.small {
+    font-size: rem(14px);
+  }
+}
+
+
+
+.form-group p {
+  font-size: rem(14px);
+  line-height: 1.4;
+}
+
+.error-modal-msg {
+  color: $black;
+}

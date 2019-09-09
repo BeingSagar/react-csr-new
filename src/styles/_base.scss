@@ -1,0 +1,154 @@
+@import "variables";
+// @import "mixins";
+
+html,
+body {
+  @include font-lato-normal();
+  background-color: $pw-grey;
+}
+
+html {
+  font-size: vw(18px);
+
+  @include bp-design {
+    font-size: vw-design(16px);
+  }
+
+  @include bp-tablet {
+    font-size: vw-tablet(16px);
+  }
+
+  @include bp-mobile {
+    font-size: vw-mobile(16px);
+  }
+}
+
+.page-content {
+  min-height: 100vh;
+  color: $label-text-color;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:target,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+input,
+textarea,
+select {
+  &:hover,
+  &:active,
+  &:focus,
+  &:target,
+  &:visited {
+    outline: none;
+  }
+}
+
+.color-blue {
+  color: $primary;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: $hide-menu-breakpoint) {
+  html,
+  body {
+    // font-size: 12px;
+  }
+
+  .detail-container {
+    width: 100%;
+  }
+}
+
+h1,
+.h1 {
+  word-spacing: -#{rem(3px)};
+  font-weight: 300;
+  color: $primary;
+  font-size: rem(36px);
+  margin: 0 0 rem(16px);
+}
+
+h2,
+.h2 {
+  margin-top: 0;
+  word-spacing: -#{rem(3px)};
+  font-weight: 300;
+  color: $primary;
+}
+
+h3,
+.h3 {
+  margin-top: 0;
+  word-spacing: -#{rem(3px)};
+  font-weight: 300;
+  color: $primary;
+}
+
+h4,
+.h4 {
+  margin-top: 0;
+  word-spacing: -#{rem(3px)};
+  font-weight: 300;
+  color: $primary;
+}
+
+h5,
+.h5 {
+  margin-top: 0;
+  font-weight: 300;
+  color: $primary;
+}
+
+h6,
+.h6 {
+  margin-top: 0;
+  word-spacing: -#{rem(3px)};
+  font-weight: 300;
+  color: $primary;
+}
+
+ul {
+  list-style: none;
+}
+
+.fs-10 {
+  font-size: rem(10px) !important;
+}
+
+.fs-12 {
+  font-size: rem(12px) !important;
+}
+
+.fs-14 {
+  font-size: rem(14px) !important;
+}
+
+.fs-16 {
+  font-size: rem(16px) !important;
+}
+
+.fs-18 {
+  font-size: rem(18px) !important;
+}
+
+.fs-20 {
+  font-size: rem(20px) !important;
+}

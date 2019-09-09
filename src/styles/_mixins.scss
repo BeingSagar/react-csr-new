@@ -1,0 +1,130 @@
+@import "variables";
+
+@mixin font-lato-normal($size: $font-size-base, $lineHeight: $line-height-base) {
+  font-family: 'Lato', sans-serif;
+  font-size: $size;
+  font-weight: normal;
+  line-height: $lineHeight;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin display-ib() {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin placeholder-italic() {
+  // Firefox
+  &::-moz-placeholder {
+    font-style: italic;
+  }
+
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
+
+  &:placeholder {
+    font-style: italic;
+  }
+}
+
+/* Calculate REM from PX */
+@function rem($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+/* Get VW for Desktop */
+@function vw($pixels, $context: $desktop-width) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1vw;
+}
+
+/* Get VW for Tablet */
+@function vw-design($pixels, $context: $design-width) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1vw;
+}
+
+/* Get VW for Tablet */
+@function vw-tablet($pixels, $context: $tab-width) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1vw;
+}
+
+/* Get VW for Mobile */
+@function vw-mobile($pixels, $context: $mobile-width) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1vw;
+}
+
+/* Breakpoint for tablet */
+@mixin bp-design {
+  @media screen and (max-width: #{$design-width-media}) {
+    @content;
+  }
+}
+
+/* Breakpoint for tablet */
+@mixin bp-tablet {
+  @media screen and (max-width: #{$tablet-width-media}) {
+    @content;
+  }
+}
+
+/* Breakpoint for Mobile */
+@mixin bp-mobile {
+  @media screen and (max-width: #{$mobile-width-media}) {
+    @content;
+  }
+}
+
+/* Print Css media query */
+@mixin print-css {
+  @media print {
+    @content;
+  }
+}
